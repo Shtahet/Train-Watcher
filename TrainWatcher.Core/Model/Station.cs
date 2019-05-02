@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace TrainWatcher.Core.Model
 		private static Station __kyiv;
 		public string Title { get; set; }
 		public string Region { get; set; }
+		[JsonProperty("value")]
 		public int Code { get; set; }
 
 		public static Station GetKherson()
@@ -38,11 +40,6 @@ namespace TrainWatcher.Core.Model
 				};
 			}
 			return __kyiv;
-		}
-
-		public static Station FromJson(string jsonObject)
-		{
-			JsonValue.Parse
 		}
 	}
 }
