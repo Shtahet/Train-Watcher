@@ -45,10 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\MultiDateConverter.cs" />
     <Compile Include="Model\Route.cs" />
     <Compile Include="Model\RoutePoint.cs" />
     <Compile Include="Model\Station.cs" />
     <Compile Include="Model\Train.cs" />
+    <Compile Include="Model\Wagon.cs" />
     <Compile Include="Service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
